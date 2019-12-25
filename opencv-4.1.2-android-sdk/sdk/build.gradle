@@ -99,6 +99,9 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 26
+        ndk {
+            abiFilters 'armeabi-v7a' // 只生成armv7的so
+        }
 
         externalNativeBuild {
             cmake {

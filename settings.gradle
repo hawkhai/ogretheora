@@ -1,2 +1,3 @@
-include ':app'
+include ':app', ':opencvsdk'
 rootProject.name='ogretheora'
+project(':opencvsdk').projectDir = new File('opencv-4.1.2-android-sdk/sdk')
